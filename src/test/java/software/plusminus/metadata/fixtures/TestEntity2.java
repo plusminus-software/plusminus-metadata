@@ -9,11 +9,11 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class TestEntity {
+public class TestEntity2 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String myField;
+    private String two;
 }
