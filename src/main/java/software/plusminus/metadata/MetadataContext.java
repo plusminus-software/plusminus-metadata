@@ -15,7 +15,7 @@ public interface MetadataContext {
     }
 
     static void addClass(Class<?> c) {
-        CLASS_MAP.put(c.getSimpleName(), c);
+        CLASS_MAP.putIfAbsent(c.getSimpleName(), c);
     }
 
 }
